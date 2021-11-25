@@ -3,3 +3,4 @@ export { default as Background } from "./background/Background.svg";
 export { default as ProjectName } from "./header/ProjectName.svg";
 export { default as NegativeIcon } from "./main/NegativeIcon.svg";
 export { default as PositiveIcon } from "./main/PositiveIcon.svg";
+export { default as StoreImg } from "./main/StoreImg.svg";
