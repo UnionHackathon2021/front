@@ -1,23 +1,20 @@
-import React, { FC } from "react";
+import React, { FC, useEffect } from "react";
 import { ChatBotImg } from "../../../asset";
 import * as S from "../style";
 
 type Props = {
   chatState: boolean;
+  content: string;
 };
 
 const Chat: FC<Props> = (props) => {
+
   return (
     <S.Chatting>
       {props.chatState ? (
         <div className="myChatting">
           <div>
-            <span>
-              상품이 너무 예쁘지만 배송시간이 오래 걸리네요.이 너무 예쁘지만
-              배송시간이 오래 걸리네요.이 너무 예쁘지만 배송시간이 오래
-              걸리네요.이 너무 예쁘지만 배송시간이 오래 걸리네요.이 너무
-              예쁘지만 배송시간이 오래 걸리네요...
-            </span>
+            <span>{props.content}</span>
           </div>
         </div>
       ) : (
@@ -25,9 +22,7 @@ const Chat: FC<Props> = (props) => {
           <img src={ChatBotImg} alt="챗봇 이미지" />
           <div>
             <span className="chatBotName">도현</span>
-            <span className="chatBotSpan">
-              안녕하세요! 주문하신 상품은 마음에 드시나요? 후기를 남겨주세요!!
-            </span>
+            <span className="chatBotSpan">{props.content}</span>
           </div>
         </div>
       )}

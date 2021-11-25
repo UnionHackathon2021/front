@@ -54,6 +54,10 @@ export const ChatBotWrapper = styled.div`
       border: none;
     }
 
+    & img {
+      cursor: pointer;
+    }
+
     & .sendIcon {
       margin-right: 20px;
       margin-left: 10px;
