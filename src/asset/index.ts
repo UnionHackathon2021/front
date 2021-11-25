@@ -3,4 +3,7 @@ export { default as Background } from "./background/Background.svg";
 export { default as ProjectName } from "./header/ProjectName.svg";
 export { default as NegativeIcon } from "./main/NegativeIcon.svg";
 export { default as PositiveIcon } from "./main/PositiveIcon.svg";
-export { default as StoreImg } from "./main/StoreImg.svg";
+export { default as StoreImg } from "./common/StoreImg.svg";
+export { default as ReviewPositiveIcon } from "./storeDetail/ReviewPositiveIcon.svg";
+export { default as ReviewNegativeIcon } from "./storeDetail/ReviewNegativeIcon.svg";
+export { default as ChatBot } from "./storeDetail/ChatBot.svg";
