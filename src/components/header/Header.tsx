@@ -1,8 +1,8 @@
-import React from "react";
+import React, { FC } from "react";
 import { Logo, ProjectName } from "../../asset";
 import * as S from "./style";
 
-const Header = () => {
+const Header: FC = () => {
   return (
     <>
       <S.HeaderWrapper>
