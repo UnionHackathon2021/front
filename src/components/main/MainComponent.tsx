@@ -1,4 +1,5 @@
-import React, { FC, Suspense } from "react";
+import React, { FC } from "react";
+import { Link } from "react-router-dom";
 import StoreCard from "./storeCard/StoreCard";
 import * as S from "./style";
 
@@ -8,7 +9,11 @@ const MainComponent: FC = () => {
       <S.MainWrapper>
         <S.StoreList>
           {[...Array(8)].map((v, i) => {
-            return <StoreCard key={i} id={i} />;
+            return (
+              <Link key={i} to="store/1">
+                <StoreCard id={i} />
+              </Link>
+            );
           })}
         </S.StoreList>
       </S.MainWrapper>

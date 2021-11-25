@@ -54,6 +54,7 @@ export const CardContent = styled.div`
 
   & .storeName {
     font-size: 16px;
+    color: black;
   }
 
   span {
