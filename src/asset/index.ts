@@ -7,3 +7,7 @@ export { default as StoreImg } from "./common/StoreImg.svg";
 export { default as ReviewPositiveIcon } from "./storeDetail/ReviewPositiveIcon.svg";
 export { default as ReviewNegativeIcon } from "./storeDetail/ReviewNegativeIcon.svg";
 export { default as ChatBot } from "./storeDetail/ChatBot.svg";
+export { default as SendIcon } from "./chatBot/SendIcon.svg";
+export { default as MikeOnIcon } from "./chatBot/MikeOnIcon.svg";
+export { default as MikeOffIcon } from "./chatBot/MikeOffIcon.svg";
+export { default as ChatBotImg } from "./chatBot/ChatBotImg.svg";
