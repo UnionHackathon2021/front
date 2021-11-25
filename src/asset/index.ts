@@ -11,3 +11,4 @@ export { default as SendIcon } from "./chatBot/SendIcon.svg";
 export { default as MikeOnIcon } from "./chatBot/MikeOnIcon.svg";
 export { default as MikeOffIcon } from "./chatBot/MikeOffIcon.svg";
 export { default as ChatBotImg } from "./chatBot/ChatBotImg.svg";
+export { default as ReviewNeutralIcon } from "./storeDetail/ReviewNeutralIcon.svg";
