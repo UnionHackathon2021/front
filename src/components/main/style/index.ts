@@ -21,12 +21,16 @@ export const StoreCard = styled.div`
   height: 250px;
   background-color: white;
   border-radius: 10px;
-  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.25);
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
+
+  & img {
+    border-radius: 10px;
+  }
 
   & .lookIcon {
     position: absolute;
