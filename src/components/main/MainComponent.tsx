@@ -1,15 +1,15 @@
-import React, { Suspense } from "react";
-import { NegativeIcon } from "../../asset";
+import React, { FC, Suspense } from "react";
+import StoreCard from "./storeCard/StoreCard";
 import * as S from "./style";
 
-const MainComponent = () => {
+const MainComponent: FC = () => {
   return (
     <>
       <S.MainWrapper>
         <S.StoreList>
-          <S.StoreCard>
-            <img src={NegativeIcon} alt="표정 아이콘" />
-          </S.StoreCard>
+          {[...Array(8)].map((v, i) => {
+            return <StoreCard key={i} id={i} />;
+          })}
         </S.StoreList>
       </S.MainWrapper>
     </>
