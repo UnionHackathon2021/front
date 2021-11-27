@@ -1,13 +1,43 @@
-import React from "react";
-import { ReviewNegativeIcon, ReviewPositiveIcon } from "../../../asset";
+import React, { FC } from "react";
+import {
+  ReviewNegativeIcon,
+  ReviewNeutralIcon,
+  ReviewPositiveIcon,
+} from "../../../asset";
+import { reviewType } from "../../../constance";
 import * as S from "../style";
 
-const Review = () => {
+const Review: FC<reviewType> = (props) => {
   return (
-    <S.Review>
-      <img src={ReviewNegativeIcon} alt="표정아이콘" />
-      <span>너무 맛없어요! 진짜 x맛없네 강력 추천 안함~! 가나다라마바사</span>
-    </S.Review>
+    <S.ReviewRow>
+      <S.Review>
+        <img
+          src={
+            props.sentiment === "negative"
+              ? ReviewNegativeIcon
+              : props.sentiment === "positive"
+              ? ReviewPositiveIcon
+              : ReviewNeutralIcon
+          }
+          alt="표정아이콘"
+        />
+        <span>{props.content}</span>
+      </S.Review>
+      <div className="sentiment">
+        <div>
+          <span>긍정</span>
+          <span>{props.positive}</span>
+        </div>
+        <div>
+          <span>부정</span>
+          <span>{props.negative}</span>
+        </div>
+        <div>
+          <span>중립</span>
+          <span>{props.neutral}</span>
+        </div>
+      </div>
+    </S.ReviewRow>
   );
 };
 

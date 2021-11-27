@@ -43,7 +43,7 @@ export const ClubInfo = styled.div`
   }
 
   & .tagList {
-    width: 250px;
+    width: 350px;
     display: flex;
     justify-content: space-between;
     margin-top: 10px;
@@ -125,21 +125,19 @@ export const ReviewContainer = styled.div`
 `;
 
 export const Review = styled.div`
-  width: 350px;
+  width: 300px;
   background: #f3f3f3;
   border-radius: 15px;
   padding: 20px 30px;
   position: relative;
   margin-left: 20px;
+  display: flex;
+  align-items: center;
 
   & img {
     position: absolute;
     left: 0;
     transform: translateX(-50%);
-  }
-
-  & + & {
-    margin-top: 10px;
   }
 `;
 
@@ -151,10 +149,37 @@ export const ChatBotWrapper = styled.div`
   right: 45px;
 
   & span {
-    padding: 13px 5px;
+    padding: 10px 15px;
     background-color: ${color.main};
     color: white;
     border-radius: 10px;
     margin-right: 15px;
+  }
+`;
+
+export const ReviewRow = styled.div`
+  display: flex;
+  align-items: center;
+
+  & + & {
+    margin-top: 10px;
+  }
+
+  & .sentiment {
+    margin-left: 15px;
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+    background: #f3f3f3;
+    border-radius: 20px;
+    padding: 10px 10px;
+    color: ${color.main};
+
+    & div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
   }
 `;
